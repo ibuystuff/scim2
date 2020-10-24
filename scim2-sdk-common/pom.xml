@@ -85,17 +85,17 @@
             </goals>
             <configuration>
               <target>
-                <echo message="create version class" />
+                <echo message="create version class"/>
                 <copy todir="target/java-gen">
-                  <fileset dir="src/main/stubs" />
-                  <globmapper from="*.java.stub" to="*.java" />
+                  <fileset dir="src/main/stubs"/>
+                  <globmapper from="*.java.stub" to="*.java"/>
                   <filterset>
-                    <filter token="PRODUCT_NAME" value="${build.product.name}" />
-                    <filter token="SHORT_NAME" value="${build.product.short.name}" />
-                    <filter token="VERSION" value="${build.version}" />
-                    <filter token="BUILD_TIMESTAMP" value="${build.timestamp}" />
-                    <filter token="GIT_PATH" value="${scmBranch}" />
-                    <filter token="GIT_REVISION" value="${buildNumber}" />
+                    <filter token="PRODUCT_NAME" value="${build.product.name}"/>
+                    <filter token="SHORT_NAME" value="${build.product.short.name}"/>
+                    <filter token="VERSION" value="${build.version}"/>
+                    <filter token="BUILD_TIMESTAMP" value="${build.timestamp}"/>
+                    <filter token="GIT_PATH" value="${scmBranch}"/>
+                    <filter token="GIT_REVISION" value="${buildNumber}"/>
                   </filterset>
                 </copy>
               </target>
@@ -217,12 +217,12 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>18.0</version>
+      <version>r03</version>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>18.0</version>
+      <version>r03</version>
       <classifier>sources</classifier>
     </dependency>
     <dependency>
